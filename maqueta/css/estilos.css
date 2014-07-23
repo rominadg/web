@@ -1,0 +1,24 @@
+﻿
+body {
+	background: #333;
+}
+h1 {
+	font-size: 1.5rem;
+}
+
+/* encabezado */
+
+#fdopag,
+#fdopag > div {
+	padding: 0;
+}
+.navprinc {
+	z-index: 1000;
+	position: fixed; 
+	top: 0;
+	left: 0;
+}
+.fdoheader {
+	background: rgba(21,21,21,0.75);
+	padding: 0;
+}
