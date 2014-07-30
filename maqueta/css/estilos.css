@@ -87,3 +87,13 @@ a.imgprueba {
   -ms-transition-duration: 500ms;
   -ms-transition-timing-function: ease-out;
 }
+
+/*rollover secciones img*/
+.bg-hover:hover {
+	background-color:rgba(204,51,51,0.3);
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%;
+}
