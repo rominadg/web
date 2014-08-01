@@ -26,18 +26,25 @@
 		</nav>
 	</header>
 	<div class="row" id="fdopag">
-			<div class="large-3 columns ocultar">
-				<div class="bg-hover"></div>
-				<a class="imgprueba perfil zoom"></a>				
+			<div class="large-3 columns imgprueba">
+				<div class="zoom">
+					<img src="./img/1.jpg" alt="Perfil">
+				</div>	
 			</div>
-			<div class="large-3 columns ocultar">
-				<a class="imgprueba servicios zoom"></a>
+			<div class="large-3 columns imgprueba">
+				<div class="zoom">
+					<img src="./img/2.jpg" alt="Servicios">
+				</div>	
 			</div>
-			<div class="large-3 columns ocultar">
-				<a class="imgprueba portfolio zoom"></a>
+			<div class="large-3 columns imgprueba">
+				<div class="zoom">
+					<img src="./img/3.jpg" alt="Portfolio">
+				</div>
 			</div>
-			<div class="large-3 columns ocultar">
-				<a class="imgprueba contacto zoom"></a>
+			<div class="large-3 columns imgprueba">
+				<div class="zoom">
+					<img src="./img/4.jpg" alt="Contacto">
+				</div>	
 			</div>
 		</div>
 		 
@@ -49,7 +56,17 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
-      $(document).foundation();
-    </script>
+-      $(document).foundation();
++        function resizeImg() {
++            $('.imgprueba').height($(window).height())
++        }
++        $(document).foundation();
++        $(document).ready(function(){
++            resizeImg();
++            $(window).resize(function(){
++                resizeImg();
++            });
++        });
+     </script>
   </body>
 </html>

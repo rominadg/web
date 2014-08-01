@@ -34,26 +34,11 @@ h1 {
 }
 
 /* prueba de zoom hover */
-.ocultar {
-	overflow: hidden; 
-}
-a.imgprueba {
+
+.imgprueba {
 	display: block; 
-	min-height: 700px;
-	/*min-height: 726px; esto lo lee del navegador... y se sobreescribi según el tamaño es JS? */
 	background-size: cover;
-}
-.perfil {
-	background-image: url(../img/1.jpg);
-}
-.servicios {
-	background-image: url(../img/2.jpg);
-}
-.portfolio {
-	background-image: url(../img/3.jpg);
-}
-.contacto {
-	background-image: url(../img/4.jpg);
+	overflow: hidden; 
 }
 .zoom {
   /* Webkit for Chrome and Safari */
