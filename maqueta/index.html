@@ -55,18 +55,17 @@
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script>
--      $(document).foundation();
-+        function resizeImg() {
-+            $('.imgprueba').height($(window).height())
-+        }
-+        $(document).foundation();
-+        $(document).ready(function(){
-+            resizeImg();
-+            $(window).resize(function(){
-+                resizeImg();
-+            });
-+        });
+	<script>
+		function resizeImg() {
+            $('.imgprueba img').height($(window).height())
+        }
+        $(document).foundation();
+        $(document).ready(function(){
+            resizeImg();
+            $(window).resize(function(){
+                resizeImg();
+            });
+        });
      </script>
   </body>
 </html>
