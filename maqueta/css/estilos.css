@@ -76,15 +76,42 @@ h1 {
 }
 
 /*rollover secciones img*/
-.bg-hover:hover {
-	background-color:rgba(204,51,51,0.3);
+.back-hover {
+	background-color:rgba(252,252,252,0.0);
 	position: absolute; 
 	top: 0; 
 	left: 0; 
 	width: 100%; 
 	height: 100%;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.zoom:hover .back-hover {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
 }
 
+.zoom:hover .unobk {
+	background-color:rgba(239,200,45,0.5);
+}
+.zoom:hover .dosbk {
+	background-color:rgba(13,180,195,0.5);
+}
+.zoom:hover .tresbk {
+	background-color:rgba(29,191,74,0.5);
+}
+.zoom:hover .cuatrobk {
+	background-color:rgba(140,44,207,0.5);
+}
 /*responsive*/
 /* Small screens*/
 @media only screen { 
