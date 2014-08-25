@@ -48,15 +48,20 @@
 			</div>
 			<div class="large-3 columns imgprueba">
 				<div class="zoom">
-					<div class="back-hover tresbk"></div>
+					<div class="back-hover02 tresbk">
+						<img src="./img/trabajos_hover.png" alt="">
+					</div>
 					<img src="./img/3.jpg" alt="Portfolio">
 				</div>
 			</div>
 			<div class="large-3 columns imgprueba">
 				<div class="zoom">
-					<div class="back-hover cuatrobk"></div>
+					<div class="back-hover"></div>
 					<img src="./img/4.jpg" alt="Contacto">
 				</div>	
+				<div class="item-section02">
+					<img src="./img/trabajos_hover.png" alt="">					
+				</div>
 			</div>
 		</div>
 		 
@@ -78,6 +83,12 @@
                 resizeImg();
             });
         });
-     </script>
+	</script>
+	<script>
+		$('.zoom').eq(0).css("-webkit-transform", "scale(1.2, 1.2)")
+		.css("-webkit-transition-duration", "500ms")
+		.css("-webkit-transition-timing-function", "ease-out")
+		.find('.unobk').css("background","none")
+    </script>
   </body>
 </html>
