@@ -1,14 +1,24 @@
 ﻿
 body {
-	background: #333;
-}
-html {
+	background: #fff;
 	font-family: 'Open Sans', sans-serif;
 }
-h1 {
-	font-size: 1.5rem;
+html, 
+a {
+	font-family: 'Open Sans'!important;
 }
-
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5rem;
+	color: #fff; 
+}
+h1 > a > img { /*esto no se si esta bien???*/
+	width: 220px;
+	padding-top: 10px;
+}
+.sinpad {
+	padding: 0;
+}
 /* encabezado */
 #fdopag {
 	max-width: none;
@@ -27,11 +37,12 @@ h1 {
 	position: fixed; 
 	top: 0;
 	left: 0;
-}
-.fdoheader {
-	background: rgba(21,21,21,0.75);
 	padding: 0;
 }
+.fdoheader {
+	padding: 0;
+}
+
 
 /* prueba de zoom hover */
 
@@ -98,76 +109,25 @@ h1 {
 	-moz-transition: all 0.4s ease;
 	-o-transition: all 0.4s ease;
 	transition: all 0.4s ease;
+	background-color:rgba(102,153,51,0.5);
 }
-
-.zoom:hover .unobk {
+/* esto son colores distintos para cada una de las secciones */
+/*.zoom:hover .unobk {
 	background-color:rgba(239,140,34,0.5);
 }
-/*.zoom:hover .dosbk {
+.zoom:hover .dosbk {
 	background-color:rgba(13,180,195,0.5);
-}*/
-
-/*prueba hover con imagen*/
-.back-hover02 > img {
-	opacity: 0; 
-	position: absolute; 
-	top: 0; 
-	left: -50%; 
-	/*width: 100%; */
-	height: 100%;
-	/*-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;*/
-}
-.zoom:hover .back-hover02 > img {
-	opacity: 0.5; 
-	position: absolute; 
-	top: 0; 
-	left: -50px; 
-	/*width: 100%; */
-	height: 100%;
-	/*-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	-o-transition: all 0.4s ease;
-	transition: all 0.4s ease;*/
 }
 
-
-/* fin prueba */
+/*prueba hover con imagen
 .zoom:hover .tresbk {
 	background-color:rgba(29,191,74,0.5);
 }
 .zoom:hover .cuatrobk {
 	background-color:rgba(140,44,207,0.5);
-}
+}*/
 
 /* item de section en home */
-.item-section02 {
-	color: #fff;
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transition: all 0.6s ease;
-	-moz-transition: all 0.6s ease;
-	-o-transition: all 0.6s ease;
-	transition: all 0.6s ease;
-	position: absolute;
-	top: 0;
-	left: -50%;
-	width: 100%;
-	text-align: center;
-	padding: 0 30px;
-}
-.zoom:hover .item-section02, 
-.imgprueba:hover .item-section02 {
-	color: #fff; 
-	visibility: visible;
-	opacity: 1;
-	top: 0;
-	left: -50%;
-}
-
-
 .item-section {
 	color: #fff;
 	visibility: hidden;
@@ -188,6 +148,101 @@ h1 {
 	visibility: visible;
 	opacity: 1;
 	top: 50%;
+}
+.masinfo {
+	display: block; 
+	width: 50px;
+	height: 50px;
+	margin: 0 auto; 
+}
+.quiensoy {
+	background: url('../img/isomasinfo.png') 0 0;
+}
+.quiensoy:hover {
+	background: url('../img/isomasinfo.png') -50px 0;
+}
+.quehago {
+	background: url('../img/isomasinfo.png') 0 0;
+}
+.quehago:hover {
+	background: url('../img/isomasinfo.png') -100px 0;
+}
+.portfolio {
+	background: url('../img/isomasinfo.png') 0 0;
+}
+.portfolio:hover {
+	background: url('../img/isomasinfo.png') -150px 0;
+}
+.contacto {
+	background: url('../img/isomasinfo.png') 0 0;
+}
+.contacto:hover {
+	background: url('../img/isomasinfo.png') -200px 0;
+}
+
+/*botonera secciones*/
+p {
+	margin-bottom: 5px; 
+}
+.fdoheaderscc {
+	padding: 0;
+	height: 91px;
+}
+.navseccion {
+	padding-left: 14px;
+	background-color: rgba(164,163,161,0.2);
+}
+.ttseccion {
+	font-size: 2rem;
+	color: #693;
+	margin: 20px 0;
+}
+.parrafo02 {
+	font-size: 14px; 
+	color: #666; 
+}
+.button {
+	border-style: solid;
+	border-width: 0px;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	display: inline-block;
+	padding-top: 33px;
+	padding-right: 5.5rem;
+	padding-bottom: 36px;
+	padding-left: 5.5rem;
+	font-size: 1rem;
+	background-color: rgba(164,163,161,0);
+	border-color: #007095;
+	color: #693;
+	transition: background-color 300ms ease-out;
+}
+.button:hover, .button:focus {
+	background-color: rgba(102,153,51,0.5); 
+}
+/* rollovers con color en c/u
+.uno:hover, .uno:focus {
+	background-color: rgba(239,140,34,1); 
+}
+.dos:hover, .dos:focus {
+	background-color: rgba(13,180,195,1); 
+}
+.tres:hover, .tres:focus {
+	background-color: rgba(29,191,74,1); 
+}
+.cuatro:hover, .cuatro:focus {
+	background-color: rgba(140,44,207,1); 
+}*/
+section {
+	text-align: center; 
 }
 /*responsive*/
 /* Small screens*/
