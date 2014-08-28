@@ -250,6 +250,40 @@ section {
 	text-align: center; 
 	padding-top: 80px;
 }
+
+/*sección frases*/
+.imgfrases {
+	position: relative; 
+}
+#imgfdo {
+	background: url(../img/countdown.jpg) no-repeat fixed;
+	background-position: 50% 0 !important;
+	color: white;
+	height: 300px;
+	margin: 0 auto;
+	padding: 0;
+}
+.frases {
+	position: absolute;
+	left: 530px;
+	top: 200px;
+}
+
+/*seccion portfolio*/
+
+.sinbullet {
+	list-style: none;
+	margin: 0; 
+	display: table; 
+	width: 100%;
+}
+.sinbullet li {
+	display: table-cell;
+}
+.sinbullet li a {
+	color: #693;
+}
+
 /*responsive*/
 /* Small screens*/
 @media only screen { 
