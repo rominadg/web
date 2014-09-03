@@ -25,7 +25,7 @@ h1 > a > img { /*esto no se si esta bien???*/
 	padding: 0;
 }
 /* encabezado */
-#fdopag {
+.fdopag {
 	max-width: none;
 	-webkit-transition-property: height, width;
 	-moz-transition-property: height, width;
@@ -33,8 +33,8 @@ h1 > a > img { /*esto no se si esta bien???*/
 	-o-transition-property: height, width;
 	transition-property: height, width;
 }
-#fdopag,
-#fdopag > div {
+.fdopag,
+.fdopag > div {
 	padding: 0;
 }
 .navprinc {
@@ -266,9 +266,7 @@ section {
 	padding: 0;
 }
 .frases {
-	position: absolute;
-	left: 530px;
-	top: 200px;
+	padding-top: 120px;
 }
 
 /*seccion portfolio*/
@@ -285,7 +283,39 @@ section {
 .sinbullet li a {
 	color: #693;
 }
-
+/* item trabajos */
+.imgport img {
+	width: 100%;
+ }
+ /* rollover item trabajos */
+.hoverportfolio a {
+	padding: 20px; 
+	display: block; 
+ }
+.hoverportfolio {
+	display: none; 
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(96, 202, 232, 0);
+	left: 0; 
+	top: 0;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.imgport:hover .hoverportfolio {
+	display: block; 
+	background: rgba(96, 202, 232, 0.83);
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
 /*responsive*/
 /* Small screens*/
 @media only screen { 
