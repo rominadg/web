@@ -17,15 +17,13 @@ h3 {
 	font-size: 1.5rem;
 	color: #666;
 }
-h1 > a > img { /*esto no se si esta bien???*/
-	width: 220px;
-	padding-top: 10px;
-}
+
 .sinpad {
 	padding: 0;
 }
 /* encabezado */
 .fdopag {
+	position: relative; 
 	max-width: none;
 	-webkit-transition-property: height, width;
 	-moz-transition-property: height, width;
@@ -36,6 +34,13 @@ h1 > a > img { /*esto no se si esta bien???*/
 .fdopag,
 .fdopag > div {
 	padding: 0;
+}
+.logoimg {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	z-index: 33;
+	width: 250px;
 }
 .navprinc {
 	z-index: 1000;

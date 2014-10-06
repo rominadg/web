@@ -9,23 +9,10 @@
 	<link rel="stylesheet" href="css/estilos.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
-  <body>
-    <header class="row fdoheader">
-		<nav class="large-12 columns navprinc">
-			<div class="large-3 columns">
-				<h1><a href="#"><img src="./img/logo.png" alt="pseudo"></a></h1>
-			</div>
-			<div class="large-9 columns hide">
-				<ul class="button-group right">
-					<li><a href="#" class="button">Perfil</a></li>
-					<li><a href="#" class="button">Servicios</a></li>
-					<li><a href="#" class="button">Portfolio</a></li>
-					<li><a href="#" class="button">Contacto</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+  <body>    
+  <h1 class="hide">dgrr</h1>
 	<div class="row fdopag">
+		<img class="logoimg" src="./img/logo.png" alt="pseudo">
 			<div class="large-3 columns imgprueba">
 				<div class="zoom">
 					<div class="back-hover unobk"></div>
@@ -91,11 +78,18 @@
             });
         });
 	</script>
-	<!--<script>
-		$('.zoom').eq(0).css("-webkit-transform", "scale(1.2, 1.2)")
-		.css("-webkit-transition-duration", "500ms")
-		.css("-webkit-transition-timing-function", "ease-out")
-		.find('.unobk').css("background","rgba(239,140,34,0.5)")
-    </script> -->
+	<script>
+		$('.item-section').hover(function(){
+		var elemZoom = $(this).siblings('.zoom');
+		$(elemZoom).css("-webkit-transform", "scale(1.2, 1.2)");
+		$(elemZoom).find('.back-hover')
+			.css("background-color","rgba(102,153,51,0.5)");
+	}, function(){
+		var elemZoom = $(this).siblings('.zoom');
+		$(elemZoom).css("-webkit-transform", "scale(1, 1)");
+		$(elemZoom).find('.back-hover')
+			.css("background-color","rgba(252,252,252,0.0)");
+	});
+	</script>
   </body>
 </html>
