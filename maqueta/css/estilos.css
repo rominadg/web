@@ -191,6 +191,9 @@ h3 {
 .contacto:hover {
 	background: url('../img/isomasinfo.png') -200px 0;
 }
+textarea.text.textarea {
+	height: 160px;
+}
 
 /*botonera secciones*/
 p {

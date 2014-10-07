@@ -15,7 +15,7 @@
     <header class="row fdoheaderscc">
 		<nav data-magellan-expedition="fixed" class="large-12 columns navprinc navseccion">
 			<div class="large-3 columns">
-				<h1><a class="logotop" href="#"><img src="./img/logo.png" alt="pseudo"></a></h1>
+				<h1><a class="logotop" href="index.html"><img src="./img/logo.png" alt="pseudo"></a></h1>
 			</div>
 			<div class="large-9 columns sinpad">
 				<ul class="button-group right">
@@ -138,6 +138,19 @@
 		<div class="large-12 columns">
 			<h2  data-magellan-destination="contacto" class="ttseccion">CONTACTO</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+		</div>
+		<div class="large-12 columns">
+			<div class="large-6 columns">
+				<input type="text" name="name" class="text" value="Nombre" onblur="if (this.value == '') {this.value = 'Nombre';}" onfocus="if (this.value == 'Nombre') {this.value = '';}">
+				<input type="email" name="email" class="text validation-error" value="Correo" onblur="if (this.value == '') {this.value = 'Correo';}" onfocus="if (this.value == 'Correo') {this.value = '';}">
+				<input type="text" name="asubject" class="text" value="Asunto" onblur="if (this.value == '') {this.value = 'Asunto';}" onfocus="if (this.value == 'Asunto') {this.value = '';}">
+			</div>
+			<div class="large-6 columns">
+				<textarea name="message" class="text textarea" value="Mensaje" onblur="if (this.value == 'Mensaje') {this.value = '';}" onfocus="if (this.value == 'Mensaje') {this.value = '';}">Mensaje</textarea>			
+				<div class="large-3 columns">
+					<button>ENVIAR</button>
+				</div>	
+			</div>
 		</div>
 	</section>
 	<script>
