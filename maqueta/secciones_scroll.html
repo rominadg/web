@@ -9,6 +9,7 @@
     <script src="js/vendor/modernizr.js"></script>
 	<script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/animatescroll.js"></script>
+	<script src="js/jquery.quicksand.js"></script>
   </head>
   <body>
     <header class="row fdoheaderscc">
@@ -85,60 +86,63 @@
 				<h2 data-magellan-destination="portfolio" class="ttseccion">PORTFOLIO</h2>
 			</div>
 			<div class="large-12 columns">
-				<ul class="sinbullet">
-					<li><a href="#" >Todos</a></li>
-					<li><a href="#" >Identidad</a></li>
-					<li><a href="#" >Gráfica</a></li>
-					<li><a href="#" >Web</a></li>
+				<ul id="filter" class="sinbullet">
+					<li><a href="#">Todos</a></li>
+					<li><a href="#" value="ident">Identidad</a></li>
+					<li><a href="#" value="grafica">Gráfica</a></li>
+					<li><a href="#" value="web">Web</a></li>
 				</ul>
 			</div>
 		</section>
-		<div class="row fdopag">
-			<div class="large-3 columns imgport">
-				<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-			</div>
-			<div class="large-3 columns imgport">
-				<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-			</div>
-			<div class="large-3 columns imgport">
-				<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-			</div>
-			<div class="large-3 columns imgport">
-				<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-			</div>
-		</div>
-		<div class="row fdopag">
-			<div class="large-3 columns imgport">
-				<div class="imgportfolio">	
+		<section id="destination">
+			<div class="row fdopag">
+				<div data-id="id-1" data-type="ident" class="large-3 columns imgport">
 					<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
 				</div>
-				<div class="hoverportfolio">	
-					<a href="#">
-						<h4>Trabajo01</h4>
-						<span>detalle01</span>
-					</a>
+				<div data-id="id-2" data-type="grafica" class="large-3 columns imgport">
+					<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</div>
+				<div data-id="id-3" data-type="web" class="large-3 columns imgport">
+					<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</div>
+				<div data-id="id-4" data-type="ident" class="large-3 columns imgport">
+					<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
 				</div>
 			</div>
-			<div class="large-3 columns imgport">
-				<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+			<div class="row fdopag">
+				<div data-id="id-5" data-type="ident" class="large-3 columns imgport">
+					<div class="imgportfolio">	
+						<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+					</div>
+					<div class="hoverportfolio">	
+						<a href="#">
+							<h4>Trabajo01</h4>
+							<span>detalle01</span>
+						</a>
+					</div>
+				</div>
+				<div data-id="id-6" data-type="web" class="large-3 columns imgport">
+					<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</div>
+				<div data-id="id-7" data-type="ident" class="large-3 columns imgport">
+					<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</div>
+				<div data-id="id-1" data-type="grafica" class="large-3 columns imgport">
+					<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</div>
 			</div>
-			<div class="large-3 columns imgport">
-				<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-			</div>
-			<div class="large-3 columns imgport">
-				<a href=""><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-			</div>
-		</div>
-
+		</section>
 <!-- contenido de seccion contacto -->	
 	<a name="contacto"></a>
 	<section  id="section-4" class="row">
 		<div class="large-12 columns">
-			<h2  data-magellan-destination="contacto" class="ttseccion">SOY</h2>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-			<p class="parrafo02">Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+			<h2  data-magellan-destination="contacto" class="ttseccion">CONTACTO</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
 		</div>
 	</section>
-	
+	<script>
+		$('#source').quicksand( $('#destination div'), function() {
+	});
+	</script>
   </body>
  </html>
