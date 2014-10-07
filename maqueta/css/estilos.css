@@ -196,6 +196,10 @@ h3 {
 p {
 	margin-bottom: 5px; 
 }
+.logotop  img{
+	padding-top: 20px;
+	width: 200px;
+}
 .fdoheaderscc {
 	padding: 0;
 	height: 91px;

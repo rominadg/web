@@ -14,14 +14,14 @@
     <header class="row fdoheaderscc">
 		<nav data-magellan-expedition="fixed" class="large-12 columns navprinc navseccion">
 			<div class="large-3 columns">
-				<h1><a href="#"><img src="./img/logo.png" alt="pseudo"></a></h1>
+				<h1><a class="logotop" href="#"><img src="./img/logo.png" alt="pseudo"></a></h1>
 			</div>
 			<div class="large-9 columns sinpad">
 				<ul class="button-group right">
-					<li data-magellan-arrival="perfil"><a href="#perfil" class="button">Perfil</a></li>
-					<li data-magellan-arrival="servicios"><a href="#servicios" class="button">Servicios</a></li>
-					<li data-magellan-arrival="portfolio"><a href="#portfolio" class="button tres">Portfolio</a></li>
-					<li data-magellan-arrival="contacto"><a href="#contacto" class="button cuatro">Contacto</a></li>
+					<li data-magellan-arrival="perfil"><a href="#"  onclick="$('#section-1').animatescroll();" class="button">Perfil</a></li>
+					<li data-magellan-arrival="servicios"><a  href="#"  onclick="$('#section-2').animatescroll();" class="button">Servicios</a></li>
+					<li data-magellan-arrival="portfolio"><a  href="#"  onclick="$('#section-3').animatescroll();" class="button tres">Portfolio</a></li>
+					<li data-magellan-arrival="contacto"><a  href="#"  onclick="$('#section-4').animatescroll();" class="button cuatro">Contacto</a></li>
 					<li>
 						<ul class="button-group">
 							<li class="buttonred">
@@ -42,7 +42,7 @@
 	</header>
 <!-- contenido de seccion perfil -->	
 	<a name="perfil"></a>
-	<section class="row">
+	<section  id="section-1" class="row">
 		<div class="large-12 columns">
 			<h2  data-magellan-destination="perfil" class="ttseccion">SOY</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -52,7 +52,7 @@
 	
 <!-- contenido de seccion servicios -->	
 	<a name="servicios"></a>
-	<section class="row">
+	<section  id="section-2" class="row">
 		<div class="large-12 columns">
 			<h2  data-magellan-destination="perfil" class="ttseccion">CREO</h2>
 			<div class="large-4 columns">
@@ -80,7 +80,7 @@
 	</section>
 <!-- contenido de seccion portfolio -->	
 	<a name="portfolio"></a>
-		<section class="row">
+		<section  id="section-3" class="row">
 			<div class="large-12 columns">
 				<h2 data-magellan-destination="portfolio" class="ttseccion">PORTFOLIO</h2>
 			</div>
@@ -132,7 +132,7 @@
 
 <!-- contenido de seccion contacto -->	
 	<a name="contacto"></a>
-	<section class="row">
+	<section  id="section-4" class="row">
 		<div class="large-12 columns">
 			<h2  data-magellan-destination="contacto" class="ttseccion">SOY</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
