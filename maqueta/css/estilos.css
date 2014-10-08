@@ -194,7 +194,29 @@ h3 {
 textarea.text.textarea {
 	height: 160px;
 }
-
+.btn-envio {
+	background-color: #693;
+	padding: 20px 32px;
+}
+.btn-envio:hover, .btn-envio:focus, .btn-envio:hover, .btn-envio:focus {
+	background-color: #177848;
+}
+.fdodatos {
+	background-color: #693;
+	padding: 30px;
+}
+.datoscontacto {
+	color: #fff;
+}
+.pdng {
+	margin: 30px 0 0;
+}
+.redpie {
+	opacity: 0.5; 
+}
+.redpie:hover {
+	opacity: 1; 
+}
 /*botonera secciones*/
 p {
 	margin-bottom: 5px; 
