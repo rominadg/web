@@ -308,12 +308,17 @@ section {
 .sinbullet {
 	list-style: none;
 	margin: 0; 
-	display: table; 
 	width: 100%;
 }
-.sinbullet li {
-	display: table-cell;
+.vertable{
+	display: table; 
 }
+.sinbullet > li {
+	float: left;
+}
+/*.sinbullet li {
+	display: table-cell;
+}*/
 .sinbullet li a {
 	color: #693;
 }
