@@ -310,8 +310,8 @@ section {
 	margin: 0; 
 	width: 100%;
 }
-.vertable{
-	display: table; 
+.vertable li{
+	display: table-cell; 
 }
 .sinbullet > li {
 	float: left;
@@ -322,8 +322,14 @@ section {
 .sinbullet li a {
 	color: #693;
 }
+
 /* item trabajos */
-.imgport img {
+.imgport, .web,
+.ident, .grafica {
+	width: 25%;
+ }
+.imgport img, .web img,
+.ident img, .grafica img {
 	width: 100%;
  }
  /* rollover item trabajos */
@@ -414,3 +420,10 @@ section {
 		max-width: none!important;
 	}
 } /* min-width 1921px, xxlarge screens */
+
+
+/*prueba quicksand*/
+.filter li, 
+#list li {
+	list-style: none; 
+}
