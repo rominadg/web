@@ -16,11 +16,11 @@
   </head>
   <body>
     <div id="filter">
-		<button type="radio" name="type" value="all" onclick="script">Everything</button>
-		<button type="radio" name="type" value="app">Applications</button>
-		<button type="radio" name="type" value="util">Utilities</button>
-	  	<button type="radio" name="sort" value="size" onclick="script">Size</button>
-		<button type="radio" name="sort" value="name">Name</button>    
+		<button  name="type" value="all">Everything</button>
+		<button  name="type" value="app">Applications</button>
+		<button  name="type" value="util">Utilities</button>
+	  	<button  name="sort" value="size" >Size</button>
+		<button  name="sort" value="name">Name</button>    
 	</div>
 	
 	<ul id="applications" class="image-grid">
@@ -118,7 +118,31 @@
 
 		// DOMContentLoaded
 		$(function() {
+          // Cuando se haga click en los botones disparar funcionalidad
+          var apps = $('#applications');
+          var dataapps = apps.clone();
+          $('#filter button').on("click", function(){
+              console.log("hola romina, soy "+$(this).val())
+              // get the first collection
 
+              // clone applications to get a second collection
+
+              // proceso de filtro
+
+              var sortedData; 
+              if($(this).val()==="all") {
+                sortedData = dataapps.find('li');
+              } else {
+                sortedData = dataapps.find('li[data-type="'+$(this).val()+'"]');
+                    
+              }
+              // finally, call quicksand
+              apps.quicksand(sortedData, {
+                  duration: 800,
+                  easing: 'easeInOutQuad'
+              });
+          });
+/*
 		  // bind radiobuttons in the form
 		  var $filterType = $('#filter button[name="type"]');
 		  var $filterSort = $('#filter button[name="sort"]');
@@ -160,6 +184,7 @@
 			});
 
 		  });
+            */
 
 		});
 	});
