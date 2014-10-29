@@ -60,17 +60,17 @@
 	<section  id="section-2" class="row">
 		<div class="large-12 columns">
 			<h2  data-magellan-destination="perfil" class="ttseccion">CREO</h2>
-			<div class="large-4 columns">
+			<div class="large-4 columns cuadroserv">
 				<h3>ESTO</h3>
-				<p class="parrafo02">Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				<p class="parrafo02 animation_jump">Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 			</div>
-			<div class="large-4 columns">
+			<div class="large-4 columns cuadroserv">
 				<h3>LO OTRO</h3>
-				<p class="parrafo02">Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				<p class="parrafo02 animation_jump">Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 			</div>
-			<div class="large-4 columns">
+			<div class="large-4 columns cuadroserv">
 				<h3>Y ESO TAMBIÉN</h3>
-				<p class="parrafo02">Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				<p class="parrafo02 animation_jump">Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 			</div>
 		</div>
 	</section>
@@ -90,43 +90,42 @@
 				<h2 data-magellan-destination="portfolio" class="ttseccion">PORTFOLIO</h2>
 			</div>
 			<div class="large-12 columns">
-				<ul class="filter sinbullet vertable">
-					<li class="segment-1"><a href="#" data-value="all">Todos</a></li>
-					<li class="segment-0"><a href="#" data-value="ident">Identidad</a></li>
-					<li class="segment-2"><a href="#" data-value="grafica">Gráfica</a></li>
-					<li class="segment-3"><a href="#" data-value="web">Web</a></li>
-				</ul>
+				<div id="filter">
+					<button  name="type" value="all">Todo</button>
+					<button  name="type" value="grafica">Gráfica</button>
+					<button  name="type" value="web">Web</button>
+					<button  name="sort" value="ident" >Identidad</button>
+					<button  name="sort" value="dept">dePocoTodo</button>    
+				</div>
 			</div>
 		</section>
-		<section>
-			<div class="row fdopag">
-				<ul class="portfoliocu sinbullet">
-					<li data-id="id-1" class="ident">
+		<section>		
+			<ul id="applications" class="grises">
+				<li data-id="id-1" data-type="ident">
+					<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</li>
+				<li data-id="id-2" data-type="grafica">
+					<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</li>
+				<li data-id="id-3" data-type="web">
 						<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-					</li>
-					<li data-id="id-2" class="grafica">
-						<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-					</li>
-					<li data-id="id-3" class="web">
-						<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-					</li>
-					<li data-id="id-4" class="ident">
-						<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-					</li>						
-					<li data-id="id-5" class="ident">
-						<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-					</li>
-					<li data-id="id-6" class="web">
-						<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-					</li>
-					<li data-id="id-7" class="ident">
-						<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-					</li>
-					<li data-id="id-8" class="grafica">
-						<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
-					</li>
-				</ul>
-			</div>
+				</li>
+				<li data-id="id-4" data-type="ident">
+					<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</li>						
+				<li data-id="id-5" data-type="ident">
+					<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</li>
+				<li data-id="id-6" data-type="web">
+					<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</li>
+				<li data-id="id-7" data-type="dept">
+					<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</li>
+				<li data-id="id-8" data-type="grafica">
+					<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
+				</li>
+			</ul>
 		</section>
 <!-- contenido de seccion contacto -->	
 	<a name="contacto"></a>
@@ -160,14 +159,57 @@
 		</div>
 	</section>
 <script>
-$(document).ready(function(){
-	$(function() {
-	  $('.filter li a').click(function(e) {
-		$.get( $(this).attr('value'), function(data) {
-			$('.portfolio').quicksand( $(data).find('li'), { adjustHeight: 'dynamic' } );
-		});  
-		e.preventDefault();  
-	  })})
+		// Custom sorting plugin
+	$(document).ready(function(){
+		(function($) {
+		  $.fn.sorted = function(customOptions) {
+			var options = {
+			  reversed: false,
+			  by: function(a) { return a.text(); }
+			};
+			$.extend(options, customOptions);
+			$data = $(this);
+			arr = $data.get();
+			arr.sort(function(a, b) {
+			  var valA = options.by($(a));
+			  var valB = options.by($(b));
+			  if (options.reversed) {
+					return (valA < valB) ? 1 : (valA > valB) ? -1 : 0;				
+				  } else {		
+					return (valA < valB) ? -1 : (valA > valB) ? 1 : 0;	
+				  }
+				});
+			return $(arr);
+			};
+		})(jQuery);
+
+		// DOMContentLoaded
+		$(function() {
+          // Cuando se haga click en los botones disparar funcionalidad
+          var apps = $('#applications');
+          var dataapps = apps.clone();
+          $('#filter button').on("click", function(){
+              console.log("hola romina, soy "+$(this).val())
+              // get the first collection
+
+              // clone applications to get a second collection
+
+              // proceso de filtro
+
+              var sortedData; 
+              if($(this).val()==="all") {
+                sortedData = dataapps.find('li');
+              } else {
+                sortedData = dataapps.find('li[data-type="'+$(this).val()+'"]');
+                    
+              }
+              // finally, call quicksand
+              apps.quicksand(sortedData, {
+                  duration: 800,
+                  easing: 'easeInOutQuad'
+              });
+          });
+		});
 	});
 </script>	
  </html>

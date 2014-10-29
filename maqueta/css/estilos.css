@@ -32,7 +32,7 @@ h3 {
 	transition-property: height, width;
 }
 .fdopag,
-.fdopag > div {
+.fdopag > div{
 	padding: 0;
 }
 .logoimg {
@@ -52,10 +52,14 @@ h3 {
 .fdoheader {
 	padding: 0;
 }
-.redes {
+.buttonred {
 	clear: both;
+	background-color: #693;
+	height: 46px;
 }
-
+li.buttonred:hover {
+	background-color: rgb(23, 102, 39);
+}
 /* prueba de zoom hover */
 
 .imgprueba {
@@ -302,38 +306,100 @@ section {
 .frases {
 	padding-top: 120px;
 }
+/*seccion servicios*/
+.service {
+	display: table;
+}
+.cuadroserv {
+	padding-top: 25px;
+	height: 200px;
+	display: table-cell;
+	border-right: 1px #ccc solid;
+	vertical-align: middle; 
+}
+.cuadroserv_open {
+	opacity: 1 !important;
+	height: auto !important;
+}
+.animation_jump {
+	-webkit-animation: animation_jump_out_small 1000ms linear both;
+	animation: animation_jump_out_small 1000ms linear both;
+	-webkit-animation-delay: 20ms;
+	animation-delay: 20ms;
+}
+.animation_jump_2 {
+	-webkit-animation: animation_jump_out_small 1000ms linear both;
+	animation: animation_jump_out_small 1000ms linear both;
+	-webkit-animation-delay: 20ms;
+	animation-delay: 20ms;
+}
+.cuadroserv p {
+	display: block;
+	height: 0px;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.txt_open {
+	opacity: 1; 
+	height: auto; 	
+}
 
 /*seccion portfolio*/
 
 .sinbullet {
 	list-style: none;
-	margin: 0; 
-	width: 100%;
-}
-.vertable li{
-	display: table-cell; 
 }
 .sinbullet > li {
 	float: left;
 }
-/*.sinbullet li {
-	display: table-cell;
-}*/
-.sinbullet li a {
-	color: #693;
+#applications {
+	margin: 0;
 }
 
-/* item trabajos */
-.imgport, .web,
-.ident, .grafica {
+#applications li {
+	list-style: none;
+	float: left;
 	width: 25%;
- }
-.imgport img, .web img,
-.ident img, .grafica img {
+}
+#applications img {
 	width: 100%;
  }
  /* rollover item trabajos */
-.hoverportfolio a {
+ 
+ .grises img {
+	filter: url('#grayscale'); /* Versión SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+	filter: Gray(); /* IE4-8 and 9 */
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.grises img:hover { 
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: none;
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+ 
+ /*hover provisorio*/
+/*.hoverportfolio a {
 	padding: 20px; 
 	display: block; 
  }
@@ -360,6 +426,13 @@ section {
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
+}*/
+#filter > button {
+	background-color: #693;
+}
+#filter > button:hover, 
+#filter > button:active {
+	background-color: #355713;
 }
 /*responsive*/
 /* Small screens*/

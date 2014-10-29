@@ -142,50 +142,6 @@
                   easing: 'easeInOutQuad'
               });
           });
-/*
-		  // bind radiobuttons in the form
-		  var $filterType = $('#filter button[name="type"]');
-		  var $filterSort = $('#filter button[name="sort"]');
-
-		  // get the first collection
-		  var $applications = $('#applications');
-
-		  // clone applications to get a second collection
-		  var $data = $applications.clone();
-
-		  // attempt to call Quicksand on every form change
-		  $filterType.add($filterSort).change(function(e) {
-			if ($('#filter button[name="type"]:.click').val() == 'all') {
-			  var $filteredData = $data.find('li');
-			} else {
-			  var $filteredData = $data.find('li[data-type=' + $('#filter button[name="type"]:.click').val() + ']');
-			}
-
-			// if sorted by size
-			if ($('#filter button[name="sort"]:.click').val() == "size") {
-			  var $sortedData = $filteredData.sorted({
-				by: function(v) {
-				  return parseFloat($(v).find('span[data-type=size]').text());
-				}
-			  });
-			} else {
-			  // if sorted by name
-			  var $sortedData = $filteredData.sorted({
-				by: function(v) {
-				  return $(v).find('strong').text().toLowerCase();
-				}
-			  });
-			}   
-
-			// finally, call quicksand
-			$applications.quicksand($sortedData, {
-			  duration: 800,
-			  easing: 'easeInOutQuad'
-			});
-
-		  });
-            */
-
 		});
 	});
 	</script>
