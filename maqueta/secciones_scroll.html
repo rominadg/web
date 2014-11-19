@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -80,14 +80,80 @@
 <!-- imagen ornamental -->
 	<section class="imgfrases">
 		<div id="imgfdo">
+            <!--
 			<div class="row frases">
 				<p>Aenean commodo ligula eget dolor. Aenean massa.</p>
 			</div>
+            -->
+            <style>
+                 .orbit-caption {
+                    height: 100px;
+                 }
+                
+                 .example-orbit {
+                    margin-top: 100px;
+                 }
+                
+                 .imgfdoadjust {
+                    padding-top: 120px;
+                 }
+                
+                 .orbit-container {
+                    border: 1px solid red;
+                     height: 100px;
+                    
+                 }
+                 .orbit-container p {
+                    height: 100px;
+                 }
+            </style>
+            <div class="row imgfdoadjust">
+                <ul class="example-orbit" data-orbit data-options="animation:slide;
+                  next_on_click: true;
+                  animation_speed:500;
+                  navigation_arrows:true;
+                  slide_number:false;
+                  timer:false;
+                  bullets:false;">
+                  <li>
+                    <div class="orbit-caption">
+                        <p>Caption One.</p>
+                        <p>Caption One.</p>
+                        <p>Caption One.</p>
+                        <p>Caption One.</p>
+                        <p>Caption One.</p>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <div class="orbit-caption">
+                        <p>Caption Two.</p>
+                        <p>Caption Two.</p>
+                        <p>Caption Two.</p>
+                        <p>Caption Two.</p>
+                        <p>Caption Two.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="orbit-caption">
+                      
+                        <p>Caption Three. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <p>Caption Three. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <p>Caption Three. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <p>Caption Three. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    </div>
+                  </li>
+                </ul>
+            </div>
 		</div>
 	</section>
 <!-- contenido de seccion portfolio -->	
+    <style>
+    #applications {
+        height: 600px !important;
+    }      
+    </style>
 	<a name="portfolio"></a>
-		<section  id="section-3" class="row">
+		<section  id="section-3" class="row" style="padding-top:0px;">
 			<div class="large-12 columns">
 				<h2 data-magellan-destination="portfolio" class="ttseccion">PORTFOLIO</h2>
 			</div>
@@ -101,7 +167,7 @@
 				</div>
 			</div>
 		</section>
-		<section>		
+		<section style="padding-top:0px; background:#c9c9c9;">		
 			<ul id="applications" class="grises">
 				<li data-id="id-1" data-type="ident">
 					<a href="#"><img src="./img/portfolio1.jpg" alt="trabajo1"></a>
@@ -160,9 +226,15 @@
 			<p><a class="redpie" href="#"><img src="./img/fcbk+fdo.png" alt="facebook"></a></p>
 		</div>
 	</section>
+<script src="./js/vendor/fastclick.js"></script>
+<script src="./js/foundation.min.js"></script>
 <script>
 		// Custom sorting plugin
 	$(document).ready(function(){
+        
+        // Initialize Fundatation
+        $(document).foundation();
+        
 		(function($) {
 		  $.fn.sorted = function(customOptions) {
 			var options = {
@@ -208,7 +280,10 @@
               // finally, call quicksand
               apps.quicksand(sortedData, {
                   duration: 800,
-                  easing: 'easeInOutQuad'
+                  easing: 'easeInOutQuad',
+                  adjustHeight: 'auto',
+                  adjustWidth: 'auto',
+                  useScaling: false
               });
           });
 		});
@@ -407,3 +482,4 @@
 </style>
  </body>
  </html>
+   
