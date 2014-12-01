@@ -24,10 +24,10 @@
 			</div>
 			<div class="large-9 columns sinpad">
 				<ul class="button-group right">
-					<li data-magellan-arrival="perfil"><a href="#"  onclick="$('#section-1').animatescroll();" class="button">Perfil</a></li>
-					<li data-magellan-arrival="servicios"><a  href="#"  onclick="$('#section-2').animatescroll();" class="button">Servicios</a></li>
-					<li data-magellan-arrival="portfolio"><a  href="#"  onclick="$('#section-3').animatescroll();" class="button tres">Portfolio</a></li>
-					<li data-magellan-arrival="contacto"><a  href="#"  onclick="$('#section-4').animatescroll();" class="button cuatro">Contacto</a></li>
+					<li data-magellan-arrival="perfil"><a href="#section-1" class="button">Perfil</a></li>
+					<li data-magellan-arrival="servicios"><a href="#section-2" class="button">Servicios</a></li>
+					<li data-magellan-arrival="portfolio"><a href="#section-3" class="button tres">Portfolio</a></li>
+					<li data-magellan-arrival="contacto"><a href="#section-4" class="button cuatro">Contacto</a></li>
 					<li>
 						<ul class="button-group">
 							<li class="buttonred">
@@ -293,7 +293,13 @@
             modal: true,
             iframe: false
         });
+		
+		$(".button-group > li > a").click(function(){
+			console.log("funciona", $(this).html(), $(this).attr("href"));
+			$($(this).attr("href")).animatescroll();	
+		})
 	});
+	
 </script>	
 <div id="pageslide" style="display:none"></div>
 <style>
